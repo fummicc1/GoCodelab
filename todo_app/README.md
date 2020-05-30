@@ -1,0 +1,2 @@
+# Reference
+- https://medium.com/@synapticsynergy/serving-a-react-app-with-golang-using-gin-c6402ee64a4b
