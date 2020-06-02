@@ -1,0 +1,27 @@
+version: '3'
+services: 
+    app:        
+        container_name: todo_api_container_go
+        depends_on: 
+            - postgres
+        build: 
+            context: ./docker/go
+            dockerfile: Dockerfile
+        tty: true
+        ports:
+            - "8080:8080"
+        volumes: 
+            - ./go:/go/src/app/go
+
+        command: go run main.go
+
+    postgresql:
+        container_name: postgresql
+
+        build: 
+            context: ./docker/postgres
+            dockerfile: Dockerfile
+        environment: 
+            - POSTGRES_USER=app_user
+            - POSTGRES_PASSWORD=app_password
+            - POSTGRESDB=app_db

@@ -1,0 +1,5 @@
+CREATE TABLE TODO (
+    id BIGINT PRIMARY KEY,
+    title VARCHAR(20) NOT NULL,
+    content VARCHAR(120) NOT NULL
+);
