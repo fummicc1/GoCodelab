@@ -4,4 +4,5 @@ WORKDIR /go/src/app/go
 
 ADD ./go .
 
-RUN go get github.com/lib/pq
+RUN go get -u https://github.com/gin-gonic/gin \
+    go run main.go
