@@ -1,3 +1,6 @@
 [submodule "todo_api_go"]
 	path = todo_api_go
 	url = https://github.com/fummicc1/todo_api_go
+[submodule "jwt_sample_go"]
+	path = jwt_sample_go
+	url = https://github.com/fummicc1/jwt_sample_go
