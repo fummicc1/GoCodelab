@@ -4,3 +4,6 @@
 [submodule "jwt_sample_go"]
 	path = jwt_sample_go
 	url = https://github.com/fummicc1/jwt_sample_go
+[submodule "brawlstars-api-test"]
+	path = brawlstars-api-test
+	url = https://github.com/fummicc1/brawlstars-api-test
